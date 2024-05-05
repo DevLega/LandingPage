@@ -146,6 +146,7 @@
     padding-top: 6px;
     line-height: 18px;
 }
+
 .fast {
     display: flex;
     margin-top: 108px;
@@ -182,14 +183,14 @@
     height: 569px;
 }
 .fast1_img {
-    width: 480px;
-    height: 315px;
-    margin-left: 176px;
+    width: 540px;
+    height: 387px;
+    margin-left: 161px;
     margin-top: 122px;
 }
 .fast1_right_title {
     padding-top: 243px;
-    padding-left: 163px;
+    padding-left: 125px;
     width: 539px;
     font-family: "Roboto", sans-serif;
     color: #091133;
@@ -197,7 +198,7 @@
     font-weight: 500;
 }
 .fast1_right_text {
-    padding-left: 163px;
+    padding-left: 125px;
     padding-top: 20px;
     width: 539px;
     font-family: "Roboto", sans-serif;
@@ -205,4 +206,48 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+}
+
+.fast2 {
+    display: flex;
+    margin-top: 108px;
+    height: 569px;
+}
+.fast2_img {
+    width: 445px;
+    height: 325px;
+    margin-left: 209px;
+    margin-top: 122px;
+}
+.fast2_right_title {
+    padding-top: 125px;
+    padding-left: 172px;
+    width: 539px;
+    font-family: "Roboto", sans-serif;
+    color: #091133;
+    font-size: 50px;
+    font-weight: 500;
+}
+.fast2_right_text {
+    padding-left: 172px;
+    padding-top: 20px;
+    width: 539px;
+    font-family: "Roboto", sans-serif;
+    color: #505F98;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.fast2_btn {
+    margin-left: 172px;
+    margin-top: 41px;
+    background-color: #111B47;
+    border: none;
+    border-radius: 2px;
+    width: 150px;
+    height: 33px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
 }
