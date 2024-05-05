@@ -176,3 +176,33 @@
     font-weight: 400;
     line-height: 30px;
 }
+
+.fast1 {
+    display: flex;
+    height: 569px;
+}
+.fast1_img {
+    width: 480px;
+    height: 315px;
+    margin-left: 176px;
+    margin-top: 122px;
+}
+.fast1_right_title {
+    padding-top: 243px;
+    padding-left: 163px;
+    width: 539px;
+    font-family: "Roboto", sans-serif;
+    color: #091133;
+    font-size: 50px;
+    font-weight: 500;
+}
+.fast1_right_text {
+    padding-left: 163px;
+    padding-top: 20px;
+    width: 539px;
+    font-family: "Roboto", sans-serif;
+    color: #505F98;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
