@@ -253,7 +253,7 @@
 }
 
 .pricing {
-    background-color: #E7ECFF;
+    background-color: #FBFBFD;
     height: 796px;
 }
 .pricing_title {
@@ -316,5 +316,72 @@
     color: white;
     font-size: 14px;
     font-weight: 400;
+    line-height: 24px;
+}
+.footer {
+    height: 216px;
+    background-color: #E7ECFF;
+}
+.footer_up {
+    margin: 0 auto;
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+}
+.footer_up_copyright {
+    padding-top: 68px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #939EA4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.footer_up_logo {
+    padding-top: 61px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #37447E;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 38px;
+}
+.footer_up_btn {
+    margin-top: 71px;
+    background-color: #111B47;
+    border: none;
+    border-radius: 2px;
+    width: 109px;
+    height: 26px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.footer_line {
+    width: 1110px;
+    color: #CDD1D4;
+    margin-left: 185px;
+}
+
+.footer_bottom {
+    margin: 0 auto;
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_bottom_nav {
+    display: flex;
+    column-gap: 60px;
+}
+.footer_bottom_nav_link {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #929ECC;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 24px;
 }
