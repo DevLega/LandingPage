@@ -1,5 +1,11 @@
 $Roboto: "Roboto", sans-serif;
 
+
+@mixin size($width, $height) {
+    width: $width;
+    $height: $height;
+}
+
 @mixin margin($MarginTop, $MarginLeft) {
     margin-top: $MarginTop;
     margin-left: $MarginLeft;
@@ -37,59 +43,55 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_btn {
+        @include size(160px, 26px);
         @include margin(10px, 339px);
         @include text($Roboto, white, 12px, 400, auto);
-    width: 160px;
-    height: 26px;
     background-color: #111B47;
     border: none;
     cursor: pointer;
     }
 }
 .hero {
+        @include size(auto, 965px);
     display: flex;
-    height: 965px;
 
     &_left {
 
         &_title {
+            @include size(539px, auto);
             @include padding(243px, 163px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        width: 539px;
         }
 
         &_text {
+            @include size(539px, auto);
             @include padding(20px, 163px);
             @include text($Roboto, #505F98, 18px, 400, 30px, auto);
-        width: 539px;
         }
 
         &_btn {
+            @include size(190px, 36px);
             @include margin(69px, 163px);
             @include text($Roboto, white, 16px, 500, auto);
         background-color: #111B47;
         border: none;
         border-radius: 2px;
-        width: 190px;
-        height: 36px;
         cursor: pointer;
         }
 
         &_btn2 {
+            @include size(190px, 36px);
             @include margin(auto, 30px);
             @include text($Roboto, #091133, 16px, 500, auto);
         background: none;
-        width: 190px;
-        height: 36px;
         border: 2px solid #091133;
         cursor: pointer;
         }
     }
 
     &_img {
+        @include size(753px, 753px);
         @include margin(185px, 91px);
-    width: 753px;
-    height: 753px;
     }
 }
 .light {
@@ -98,15 +100,15 @@ $Roboto: "Roboto", sans-serif;
     &_left {
 
         &_title {
+            @include size(539px, auto);
             @include padding(243px, 163px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        width: 539px;
         }
 
         &_text {
+            @include size(539px, auto);
             @include padding(20px, 163px);
             @include text($Roboto, #505F98, 18px, 400, 30px, auto);
-        width: 539px;
         }
         
         &_bottom {
@@ -115,123 +117,118 @@ $Roboto: "Roboto", sans-serif;
         column-gap: 30px;
 
             &_img {
-            width: 36px;
-            height: 36px;
+                @include size(36px, 36px);
             }
     
             &_title {
+                @include size(255px, auto);
                 @include padding(14px, auto);
                 @include text($Roboto, #091133, 16px, 400, auto);
-            width: 255px;
             }
     
             &_text {
+                @include size(255px, auto);
                 @include padding(6px, auto);
                 @include text($Roboto, #5D6970, 12px, 400, 18px);
-            width: 255px;
             }
         }
     }
 
     &_img {
+            @include size(540px, 524px);
             @include margin(109px, 200px);
-        width: 540px;
-        height: 524px;
     }
 }
 .fast {
+        @include size(auto, 569px);
         @include margin(108px, auto);
     display: flex;
-    height: 569px;
 
     &_img {
+        @include size(480px, 315px);
         @include margin(122px, 176px);
-    width: 480px;
-    height: 315px;
     }
     
     &_right {
 
         &_title {
+            @include size(539px, auto);
             @include padding(243px, 163px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        width: 539px;
         }
         
         &_text {
+            @include size(539px, auto);
             @include padding(20px, 163px);
             @include text($Roboto, #505F98, 18px, 400, 30px);
-        width: 539px;
         }
     }
 }
 
 .fast1 {
+    @include size(auto, 569px);
     display: flex;
-    height: 569px;
 
     &_img {
+        @include size(540px, 387px);
         @include margin(122px, 161px);
-    width: 540px;
-    height: 387px;
     }
 
     &_right {
 
         &_title {
+            @include size(539px, auto);
             @include padding(243px, 125px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        width: 539px;
         }
         
         &_text {
+            @include size(539px, auto);
             @include padding(20px, 125px);
             @include text($Roboto, #505F98, 19px, 400, 30px);
-        width: 539px;
         }
     }
 }
 
 .fast2 {
+        @include size(auto, 569px);
         @include margin(108px, auto);
     display: flex;
     height: 569px;
 
     &_img {
+        @include size(445px, 325px);
         @include margin(122px, 209px);
-    width: 445px;
-    height: 325px;
     }
 
     &_right {
         
         &_title {
+            @include size(539px, auto);
             @include padding(125px, 172px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        width: 539px;
         }
     
         &_text {
+            @include size(539px, auto);
             @include padding(20px, 172px);
             @include text($Roboto, #505F98, 18px, 400, 30px);
-        width: 539px;
         }
     }
 
     &_btn {
+        @include size(150px, 33px);
         @include margin(41px, 172px);
         @include text($Roboto, white, 14px, 400, auto);
     background-color: #111B47;
     border: none;
     border-radius: 2px;
-    width: 150px;
-    height: 33px;
     }
 }
 
 .pricing {
+    @include size(auto, 796px);
     background-color: #FBFBFD;
-    height: 796px;
 
     &_title {
         @include padding(229px, auto);
@@ -240,9 +237,9 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_text {
+        @include size(600px, auto);
         @include padding(16px, 420px);
         @include text($Roboto, #6F7CB2, 16px, 400, 26px);
-    width: 600px;
     text-align: center;
     }
 
@@ -269,23 +266,22 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_btn {
+        @include size(189px, 32px);
         @include margin(9px, 640px);
         @include text($Roboto, white, 14px, 400, 24px);
     background-color: #111B47;
     border: none;
-    width: 189px;
-    height: 32px;
 }
 }
 
 .footer {
-    height: 216px;
+    @include size(auto, 216px);
     background-color: #E7ECFF;
 
     &_up {
+        @include size(1110px, auto);
     margin: 0 auto;
     display: flex;
-    width: 1110px;
     justify-content: space-between;
 
         &_copyright {
@@ -301,23 +297,24 @@ $Roboto: "Roboto", sans-serif;
         }
 
         &_btn {
+            @include size(109px, 26px);
             @include margin(71px, auto);
             @include text($Roboto, white, 12px, 500, 18px);
         background-color: #111B47;
         border: none;
         border-radius: 2px;
-        width: 109px;
-        height: 26px;
         }
     }
 
     &_line {
+        @include size(1110px, auto);
         @include margin(auto, 185px);
     width: 1110px;
     color: #CDD1D4;
     }
 
     &_bottom {
+        @include size(1110px, auto);
     margin: 0 auto;
     width: 1110px;
     display: flex;
@@ -338,8 +335,7 @@ $Roboto: "Roboto", sans-serif;
         column-gap: 30px;
 
             &_svg {
-                width: 16px;
-                height: 16px;
+                @include size(16px, 16px);
             }
     }
     }
