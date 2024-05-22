@@ -1,10 +1,11 @@
 $Roboto: "Roboto", sans-serif;
 
-@mixin text($font, $color, $size, $weight) {
+@mixin text($font, $color, $size, $weight, $height) {
     font-family: $font;
     color: $color;
     font-size: $size;
     font-weight: $weight;
+    line-height: $height;
 }
 .header {
     display: flex;
@@ -17,18 +18,18 @@ $Roboto: "Roboto", sans-serif;
     padding-left: 165px;
 
         &_link {
-            @include text($Roboto, #505F98, 14px, 400);
+            @include text($Roboto, #505F98, 14px, 400, auto);
         }
     }
 
     &_logo {
-        @include text($Roboto, #37447E, 26px, 900);
+        @include text($Roboto, #37447E, 26px, 900, auto);
     padding-left: 271px;
     padding-top: 12px;
     }
 
     &_btn {
-        @include text($Roboto, white, 12px, 400);
+        @include text($Roboto, white, 12px, 400, auto);
     margin-top: 10px;
     margin-left: 339px;
     width: 160px;
@@ -45,22 +46,21 @@ $Roboto: "Roboto", sans-serif;
     &_left {
 
         &_title {
-            @include text($Roboto, #091133, 50px, 500);
+            @include text($Roboto, #091133, 50px, 500, auto);
         padding-top: 243px;
         padding-left: 163px;
         width: 539px;
         }
 
         &_text {
-            @include text($Roboto, #505F98, 18px, 400);
+            @include text($Roboto, #505F98, 18px, 400, 30px, auto);
         padding-left: 163px;
         padding-top: 20px;
         width: 539px;
-        line-height: 30px;
         }
 
         &_btn {
-            @include text($Roboto, white, 16px, 500);
+            @include text($Roboto, white, 16px, 500, auto);
         background-color: #111B47;
         border: none;
         border-radius: 2px;
@@ -72,7 +72,7 @@ $Roboto: "Roboto", sans-serif;
         }
 
         &_btn2 {
-            @include text($Roboto, #091133, 16px, 500);
+            @include text($Roboto, #091133, 16px, 500, auto);
         background: none;
         margin-left: 30px;
         width: 190px;
@@ -95,18 +95,17 @@ $Roboto: "Roboto", sans-serif;
     &_left {
 
         &_title {
-            @include text($Roboto, #091133, 50px, 500);
+            @include text($Roboto, #091133, 50px, 500, auto);
         padding-top: 243px;
         padding-left: 163px;
         width: 539px;
         }
 
         &_text {
-            @include text($Roboto, #505F98, 18px, 400);
+            @include text($Roboto, #505F98, 18px, 400, 30px, auto);
         padding-left: 163px;
         padding-top: 20px;
         width: 539px;
-        line-height: 30px;
         }
         
         &_bottom {
@@ -121,13 +120,13 @@ $Roboto: "Roboto", sans-serif;
             }
     
             &_title {
-                @include text($Roboto, #091133, 16px, 400);
+                @include text($Roboto, #091133, 16px, 400, auto);
             width: 255px;
             padding-top: 14px;
             }
     
             &_text {
-                @include text($Roboto, #5D6970, 12px, 400);
+                @include text($Roboto, #5D6970, 12px, 400, 18px);
             width: 255px;
             padding-top: 6px;
             line-height: 18px;
@@ -157,18 +156,17 @@ $Roboto: "Roboto", sans-serif;
     &_right {
 
         &_title {
-            @include text($Roboto, #091133, 50px, 500);
+            @include text($Roboto, #091133, 50px, 500, auto);
         padding-top: 243px;
         padding-left: 163px;
         width: 539px;
         }
         
         &_text {
-            @include text($Roboto, #505F98, 18px, 400);
+            @include text($Roboto, #505F98, 18px, 400, 30px);
         padding-left: 163px;
         padding-top: 20px;
         width: 539px;
-        line-height: 30px;
         }
     }
 }
@@ -187,18 +185,17 @@ $Roboto: "Roboto", sans-serif;
     &_right {
 
         &_title {
-            @include text($Roboto, #091133, 50px, 500);
+            @include text($Roboto, #091133, 50px, 500, auto);
         padding-top: 243px;
         padding-left: 125px;
         width: 539px;
         }
         
         &_text {
-            @include text($Roboto, #505F98, 19px, 400);
+            @include text($Roboto, #505F98, 19px, 400, 30px);
         padding-left: 125px;
         padding-top: 20px;
         width: 539px;
-        line-height: 30px;
         }
     }
 }
@@ -218,23 +215,22 @@ $Roboto: "Roboto", sans-serif;
     &_right {
         
         &_title {
-            @include text($Roboto, #091133, 50px, 500);
+            @include text($Roboto, #091133, 50px, 500, auto);
         padding-top: 125px;
         padding-left: 172px;
         width: 539px;
         }
     
         &_text {
-            @include text($Roboto, #505F98, 18px, 400);
+            @include text($Roboto, #505F98, 18px, 400, 30px);
         padding-left: 172px;
         padding-top: 20px;
         width: 539px;
-        line-height: 30px;
         }
     }
 
     &_btn {
-        @include text($Roboto, white, 14px, 400);
+        @include text($Roboto, white, 14px, 400, auto);
     margin-left: 172px;
     margin-top: 41px;
     background-color: #111B47;
@@ -250,56 +246,50 @@ $Roboto: "Roboto", sans-serif;
     height: 796px;
 
     &_title {
-        @include text($Roboto, #091133, 36px, 500);
+        @include text($Roboto, #091133, 36px, 500, 48px);
     padding-top: 229px;
     text-align: center;
-    line-height: 48px;
     }
 
     &_text {
-        @include text($Roboto, #6F7CB2, 16px, 400);
+        @include text($Roboto, #6F7CB2, 16px, 400, 26px);
     width: 600px;
     padding-top: 16px;
     padding-left: 420px;
     text-align: center;
-    line-height: 26px;
     }
 
     &_product {
 
         &_price {
-            @include text($Roboto, #222F65, 50px, 500);
+            @include text($Roboto, #222F65, 50px, 500, 66px);
         padding-top: 35px;
         padding-right: 15px;
         text-align: center;
-        line-height: 66px;
         }
 
         &_name {
-            @include text($Roboto, #37447E, 16px, 400);
+            @include text($Roboto, #37447E, 16px, 400, 26px);
         padding-right: 15px;
         text-align: center;
-        line-height: 26px;
         }
     }
 
     &_text2 {
-        @include text($Roboto, #5D6970, 14px, 400);
+        @include text($Roboto, #5D6970, 14px, 400, 26px);
     padding-top: 60px;
     padding-right: 15px;
     text-align: center;
-    line-height: 26px;
     }
 
     &_btn {
-        @include text($Roboto, white, 14px, 400);
+        @include text($Roboto, white, 14px, 400, 24px);
     margin-top: 9px;
     margin-left: 640px;
     background-color: #111B47;
     border: none;
     width: 189px;
     height: 32px;
-    line-height: 24px;
 }
 }
 
@@ -314,28 +304,25 @@ $Roboto: "Roboto", sans-serif;
     justify-content: space-between;
 
         &_copyright {
-            @include text($Roboto, #939EA4, 14px, 500);
+            @include text($Roboto, #939EA4, 14px, 500, 24px);
         padding-top: 68px;
         text-align: center;
-        line-height: 24px;
         }
 
         &_logo {
-            @include text($Roboto, #37447E, 26px, 800);
+            @include text($Roboto, #37447E, 26px, 800, 38px);
         padding-top: 61px;
         text-align: center;
-        line-height: 38px;
         }
 
         &_btn {
-            @include text($Roboto, white, 12px, 500);
+            @include text($Roboto, white, 12px, 500, 18px);
         margin-top: 71px;
         background-color: #111B47;
         border: none;
         border-radius: 2px;
         width: 109px;
         height: 26px;
-        line-height: 18px;
         }
     }
 
@@ -356,10 +343,9 @@ $Roboto: "Roboto", sans-serif;
         column-gap: 60px;
         
         &_link {
-                @include text($Roboto, #929ECC, 14px, 500);
+                @include text($Roboto, #929ECC, 14px, 500, 24px);
             text-decoration: none;
             text-align: center;
-            line-height: 24px;
         }
     }
     &_right {
