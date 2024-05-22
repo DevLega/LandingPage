@@ -1,8 +1,13 @@
 $Roboto: "Roboto", sans-serif;
 
-@mixin padding($top, $left) {
-    padding-top: $top;
-    padding-left: $left;
+@mixin margin($MarginTop, $MarginLeft) {
+    margin-top: $MarginTop;
+    margin-left: $MarginLeft;
+}
+
+@mixin padding($PaddingTop, $PaddingLeft) {
+    padding-top: $PaddingTop;
+    padding-left: $PaddingLeft;
 }
 
 @mixin text($font, $color, $size, $weight, $height) {
@@ -32,9 +37,8 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_btn {
+        @mixin margin(10px, 339px);
         @include text($Roboto, white, 12px, 400, auto);
-    margin-top: 10px;
-    margin-left: 339px;
     width: 160px;
     height: 26px;
     background-color: #111B47;
@@ -61,21 +65,20 @@ $Roboto: "Roboto", sans-serif;
         }
 
         &_btn {
+            @mixin margin(69px, 163px);
             @include text($Roboto, white, 16px, 500, auto);
         background-color: #111B47;
         border: none;
         border-radius: 2px;
-        margin-top: 69px;
-        margin-left: 163px;
         width: 190px;
         height: 36px;
         cursor: pointer;
         }
 
         &_btn2 {
+            @mixin margin(auto, 30px);
             @include text($Roboto, #091133, 16px, 500, auto);
         background: none;
-        margin-left: 30px;
         width: 190px;
         height: 36px;
         border: 2px solid #091133;
@@ -84,10 +87,9 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_img {
+        @mixin margin(185px, 91px);
     width: 753px;
     height: 753px;
-    margin-top: 185px;
-    margin-left: 91px;
     }
 }
 .light {
@@ -108,9 +110,8 @@ $Roboto: "Roboto", sans-serif;
         }
         
         &_bottom {
+            @mixin margin(80px, 165px);
         display: flex;
-        margin-top: 80px;
-        margin-left: 165px;
         column-gap: 30px;
 
             &_img {
@@ -133,22 +134,20 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_img {
+            @mixin margin(109px, 200px);
         width: 540px;
         height: 524px;
-        margin-top: 109px;
-        margin-left: 200px;
     }
 }
 .fast {
+        @mixin margin(108px, auto);
     display: flex;
-    margin-top: 108px;
     height: 569px;
 
     &_img {
+        @mixin margin(122px, 176px);
     width: 480px;
     height: 315px;
-    margin-left: 176px;
-    margin-top: 122px;
     }
     
     &_right {
@@ -172,10 +171,9 @@ $Roboto: "Roboto", sans-serif;
     height: 569px;
 
     &_img {
+        @mixin margin(122px, 161px);
     width: 540px;
     height: 387px;
-    margin-left: 161px;
-    margin-top: 122px;
     }
 
     &_right {
@@ -195,15 +193,14 @@ $Roboto: "Roboto", sans-serif;
 }
 
 .fast2 {
+        @mixin margin(108px, auto);
     display: flex;
-    margin-top: 108px;
     height: 569px;
 
     &_img {
+        @mixin margin(122px, 209px);
     width: 445px;
     height: 325px;
-    margin-left: 209px;
-    margin-top: 122px;
     }
 
     &_right {
@@ -222,9 +219,8 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_btn {
+        @mixin margin(41px, 172px);
         @include text($Roboto, white, 14px, 400, auto);
-    margin-left: 172px;
-    margin-top: 41px;
     background-color: #111B47;
     border: none;
     border-radius: 2px;
@@ -273,9 +269,8 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_btn {
+        @mixin margin(9px, 640px);
         @include text($Roboto, white, 14px, 400, 24px);
-    margin-top: 9px;
-    margin-left: 640px;
     background-color: #111B47;
     border: none;
     width: 189px;
@@ -306,8 +301,8 @@ $Roboto: "Roboto", sans-serif;
         }
 
         &_btn {
+            @mixin margin(71px, auto);
             @include text($Roboto, white, 12px, 500, 18px);
-        margin-top: 71px;
         background-color: #111B47;
         border: none;
         border-radius: 2px;
@@ -317,9 +312,9 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_line {
+        @mixin margin(auto, 185px);
     width: 1110px;
     color: #CDD1D4;
-    margin-left: 185px;
     }
 
     &_bottom {
