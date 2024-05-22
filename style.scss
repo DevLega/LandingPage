@@ -1,5 +1,10 @@
 $Roboto: "Roboto", sans-serif;
 
+@mixin padding($top, $left) {
+    padding-top: $top;
+    padding-left: $left;
+}
+
 @mixin text($font, $color, $size, $weight, $height) {
     font-family: $font;
     color: $color;
@@ -11,11 +16,10 @@ $Roboto: "Roboto", sans-serif;
     display: flex;
 
     &_nav {
+        @mixin padding(18px, 165px);
     display: flex;
     justify-content: space-between;
     column-gap: 60px;
-    padding-top: 18px;
-    padding-left: 165px;
 
         &_link {
             @include text($Roboto, #505F98, 14px, 400, auto);
@@ -23,9 +27,8 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_logo {
+        @mixin padding(271px, 12px);
         @include text($Roboto, #37447E, 26px, 900, auto);
-    padding-left: 271px;
-    padding-top: 12px;
     }
 
     &_btn {
@@ -46,16 +49,14 @@ $Roboto: "Roboto", sans-serif;
     &_left {
 
         &_title {
+            @mixin padding(243px, 163px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        padding-top: 243px;
-        padding-left: 163px;
         width: 539px;
         }
 
         &_text {
+            @mixin padding(20px, 163px);
             @include text($Roboto, #505F98, 18px, 400, 30px, auto);
-        padding-left: 163px;
-        padding-top: 20px;
         width: 539px;
         }
 
@@ -95,16 +96,14 @@ $Roboto: "Roboto", sans-serif;
     &_left {
 
         &_title {
+            @mixin padding(243px, 163px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        padding-top: 243px;
-        padding-left: 163px;
         width: 539px;
         }
 
         &_text {
+            @mixin padding(20px, 163px);
             @include text($Roboto, #505F98, 18px, 400, 30px, auto);
-        padding-left: 163px;
-        padding-top: 20px;
         width: 539px;
         }
         
@@ -120,16 +119,15 @@ $Roboto: "Roboto", sans-serif;
             }
     
             &_title {
+                @mixin padding(14px, auto);
                 @include text($Roboto, #091133, 16px, 400, auto);
             width: 255px;
-            padding-top: 14px;
             }
     
             &_text {
+                @mixin padding(6px, auto);
                 @include text($Roboto, #5D6970, 12px, 400, 18px);
             width: 255px;
-            padding-top: 6px;
-            line-height: 18px;
             }
         }
     }
@@ -156,16 +154,14 @@ $Roboto: "Roboto", sans-serif;
     &_right {
 
         &_title {
+            @mixin padding(243px, 163px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        padding-top: 243px;
-        padding-left: 163px;
         width: 539px;
         }
         
         &_text {
+            @mixin padding(20px, 163px);
             @include text($Roboto, #505F98, 18px, 400, 30px);
-        padding-left: 163px;
-        padding-top: 20px;
         width: 539px;
         }
     }
@@ -185,16 +181,14 @@ $Roboto: "Roboto", sans-serif;
     &_right {
 
         &_title {
+            @mixin padding(243px, 125px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        padding-top: 243px;
-        padding-left: 125px;
         width: 539px;
         }
         
         &_text {
+            @mixin padding(20px, 125px);
             @include text($Roboto, #505F98, 19px, 400, 30px);
-        padding-left: 125px;
-        padding-top: 20px;
         width: 539px;
         }
     }
@@ -215,16 +209,14 @@ $Roboto: "Roboto", sans-serif;
     &_right {
         
         &_title {
+            @mixin padding(125px, 172px);
             @include text($Roboto, #091133, 50px, 500, auto);
-        padding-top: 125px;
-        padding-left: 172px;
         width: 539px;
         }
     
         &_text {
+            @mixin padding(20px, 172px);
             @include text($Roboto, #505F98, 18px, 400, 30px);
-        padding-left: 172px;
-        padding-top: 20px;
         width: 539px;
         }
     }
@@ -246,25 +238,23 @@ $Roboto: "Roboto", sans-serif;
     height: 796px;
 
     &_title {
+        @mixin padding(229px, auto);
         @include text($Roboto, #091133, 36px, 500, 48px);
-    padding-top: 229px;
     text-align: center;
     }
 
     &_text {
+        @mixin padding(16px, 420px);
         @include text($Roboto, #6F7CB2, 16px, 400, 26px);
     width: 600px;
-    padding-top: 16px;
-    padding-left: 420px;
     text-align: center;
     }
 
     &_product {
 
         &_price {
+            @mixin padding(35px, 15px);
             @include text($Roboto, #222F65, 50px, 500, 66px);
-        padding-top: 35px;
-        padding-right: 15px;
         text-align: center;
         }
 
@@ -276,8 +266,8 @@ $Roboto: "Roboto", sans-serif;
     }
 
     &_text2 {
+        @mixin padding(60px, auto);
         @include text($Roboto, #5D6970, 14px, 400, 26px);
-    padding-top: 60px;
     padding-right: 15px;
     text-align: center;
     }
@@ -304,14 +294,14 @@ $Roboto: "Roboto", sans-serif;
     justify-content: space-between;
 
         &_copyright {
+            @mixin padding(68px, auto);
             @include text($Roboto, #939EA4, 14px, 500, 24px);
-        padding-top: 68px;
         text-align: center;
         }
 
         &_logo {
+            @mixin padding(61px, auto);
             @include text($Roboto, #37447E, 26px, 800, 38px);
-        padding-top: 61px;
         text-align: center;
         }
 
